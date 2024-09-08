@@ -1,0 +1,33 @@
+.App {
+    display: flex;
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 100vh;
+    padding: 40px;
+    background-color: floralwhite;
+    font-size: larger;
+}
+
+.list {
+    list-style: none;
+}
+
+.list-element {
+    margin-bottom: 30px;
+}
+
+.link {
+    margin: 0 5px;
+    text-decoration: none;
+    color: teal;
+    font-size: larger;
+}
+
+.content {
+    width: 85%;
+    margin-top: 50px;
+}

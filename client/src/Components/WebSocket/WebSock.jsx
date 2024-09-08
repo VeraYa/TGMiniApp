@@ -51,7 +51,7 @@ export default function WebSock() {
             <div className='center'>
                 <div className='form'>
                     <input value={username} onChange={e => setUsername(e.target.value)} type="text" placeholder='Введите ваше имя' />
-                    <button onClick={connect}>Войти</button>
+                    <button className='main-btn' onClick={connect}>Войти</button>
                 </div>
             </div>
         )
@@ -61,7 +61,7 @@ export default function WebSock() {
             <div>
                 <div className='form'>
                     <input value={value} onChange={e => setValue(e.target.value)} type="text" placeholder='Введите сообщение' />
-                    <button onClick={sendMessage}>Отправить</button>
+                    <button className='main-btn' onClick={sendMessage}>Отправить</button>
                 </div>
                 <div className='messages'>
                     {messages.map(mess =>

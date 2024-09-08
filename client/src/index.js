@@ -9,7 +9,7 @@ import {
 import ErrorPage from './Components/error-page';
 import CurrencyRates from './Components/CurrencyRates/CurrencyRates';
 import WebSock from './Components/WebSocket/WebSock';
-import InfiniteScroll from './Components/Load-more-data/MoreData';
+import InfiniteScroll from './Components/Load-more-data/InfiniteScroll';
 
 const router = createBrowserRouter([
   {

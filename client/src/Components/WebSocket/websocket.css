@@ -27,7 +27,7 @@
     border: teal 1px solid;
 }
 
-.form button {
+.main-btn {
     margin-top: 15px;
     margin-left: auto;
     border: teal 1px solid;
@@ -38,7 +38,7 @@
     cursor: pointer;
 }
 
-.form button:focus, .form input:focus {
+.main-btn:focus, .form input:focus {
     outline: none;
 }
 
@@ -53,4 +53,19 @@
     border-radius: 8px;
     padding: 15px;
     margin-top: 15px;
+}
+
+@media (max-width: 700px) {
+    .form {
+        padding: 30px;
+        width: 370px;
+    }
+
+    .message {
+        width: 370px;
+    }
+
+    .connection_message {
+        width: 370px;
+    }
 }

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './CurrencyRates.css'
 
 const App = () => {
   const [rates, setRates] = useState([]);
@@ -14,9 +15,9 @@ const App = () => {
         const year = today.getFullYear();
         const formattedDate = `${day}/${month}/${year}`;
 
-        // Запрос к API Центробанка с текущей датой
+        // Запрос к API Центробанка с текущей датой с использованием cors посредника https://cors-anywhere.herokuapp.com/
         const response = await fetch(
-          `/scripts/XML_daily.asp?date_req=${formattedDate}`
+          `https://cors-anywhere.herokuapp.com/https://www.cbr.ru/scripts/XML_daily.asp?date_req=${formattedDate}`
         );
 
         // Проверка на наличие данных в ответе

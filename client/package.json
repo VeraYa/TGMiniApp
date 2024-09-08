@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "https://www.cbr.ru",
+
   "eslintConfig": {
     "extends": [
       "react-app",

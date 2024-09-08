@@ -3,16 +3,21 @@
 }
 
 #sidebar {
-    display: flex;
-    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 15%;
-    height: 100vh;
     padding: 40px;
-    background-color: floralwhite;
+    background-color: rgb(231, 237, 237);
     font-size: larger;
 }
 
 .list {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start; */
     list-style: none;
 }
 
@@ -30,4 +35,17 @@
 .content {
     width: 85%;
     margin-top: 50px;
+    margin-left: 15%;
+}
+
+@media (max-width: 700px) {
+    #sidebar {
+        width: 17%;
+        padding: 60px 7px;
+        font-size: small;
+    }
+
+    .content {
+        margin-left: 17%;
+    }
 }
